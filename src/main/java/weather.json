@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 45,
+    "lat": 45
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 300.81,
+    "feels_like": 298.65,
+    "temp_min": 300.81,
+    "temp_max": 300.81,
+    "pressure": 1008,
+    "humidity": 37,
+    "sea_level": 1008,
+    "grnd_level": 1003
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.82,
+    "deg": 321
+  },
+  "clouds": {
+    "all": 84
+  },
+  "dt": 1597333437,
+  "sys": {
+    "country": "RU",
+    "sunrise": 1597283979,
+    "sunset": 1597335012
+  },
+  "timezone": 10800,
+  "id": 478640,
+  "name": "Urozhaynoye",
+  "cod": 200
+}

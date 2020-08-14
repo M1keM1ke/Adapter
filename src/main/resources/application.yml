@@ -1,0 +1,7 @@
+feign:
+  openweather:
+    url: "https://api.openweathermap.org"
+    path: "/data/2.5"
+
+server:
+  port : 8081

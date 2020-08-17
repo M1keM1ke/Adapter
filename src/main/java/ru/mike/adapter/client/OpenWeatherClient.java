@@ -4,7 +4,6 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import ru.mike.adapter.dto.OpenWeatherResponse;
 
-
 @FeignClient(
         name = "openweather-client",
         url = "${feign.openweather.url:}",
@@ -12,8 +11,9 @@ import ru.mike.adapter.dto.OpenWeatherResponse;
 )
 
 public interface OpenWeatherClient {
-    @GetMapping(value = "/weather?lat={latitude}&lon={longtitude}&appid=667878cc40014e1d5b76fc83617cd944")
-    public OpenWeatherResponse getWeatherAt(
+    //paste your token here
+    @GetMapping(value = "/weather?lat={latitude}&lon={longtitude}&appid={weatherToken}")
+    OpenWeatherResponse getWeatherAt(
             @PathVariable("latitude") String latitude,
             @PathVariable("longtitude") String longtitude
     );
